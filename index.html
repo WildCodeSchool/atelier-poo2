@@ -9,154 +9,191 @@
     <link rel="icon" type="image/png" sizes="32x32" href="../images/favicon.png">
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
     <link rel='stylesheet'
-          href='https://cdnjs.cloudflare.com/ajax/libs/overlayscrollbars/1.9.1/css/OverlayScrollbars.min.css'>
-    <link href="https://fonts.googleapis.com/css?family=Open+Sans" rel="stylesheet">
+        href='https://cdnjs.cloudflare.com/ajax/libs/overlayscrollbars/1.9.1/css/OverlayScrollbars.min.css'>
+    <link href="https://fonts.googleapis.com/css2?family=Quantico:wght@400;700&display=swap" rel="stylesheet">
     <!-- Bulma Version 0.7.5-->
-    <link rel="stylesheet" href="https://unpkg.com/bulma@0.7.5/css/bulma.min.css"/>
+    <link rel="stylesheet" href="https://unpkg.com/bulma@0.7.5/css/bulma.min.css" />
     <link rel="stylesheet" type="text/css" href="assets/style.css">
 </head>
 
 <body>
-<!-- START NAV -->
-<nav class="navbar">
-    <div class="container">
-        <div class="navbar-brand">
-            <a class="navbar-item" href="../">
-                <img src="assets/logo.png"
-                     alt="Logo">
-            </a>
-            <span class="navbar-burger burger" data-target="navbarMenu">
-          <span></span>
-          <span></span>
-          <span></span>
-        </span>
+    <!-- START NAV -->
+    <nav class="navbar">
+        <div class="container">
+            <div class="navbar-brand">
+                <a class="navbar-item" href="../">
+                    <img src="assets/logo.png" alt="Logo">
+                </a>
+                <span class="navbar-burger burger" data-target="navbarMenu">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </span>
+            </div>
+            <div id="navbarMenu" class="navbar-menu">
+            </div>
         </div>
-        <div id="navbarMenu" class="navbar-menu">
+    </nav>
+    <!-- END NAV -->
+
+    <header class="hero is-info is-medium is-bold">
+        <div class="hero-body">
+            <div class="container has-text-centered">
+                <h1 class="title">Atelier POO 2</h1>
+                <p>À l'attaque de l’héritage et des classes abstraites !</p>
+            </div>
         </div>
-    </div>
-</nav>
-<!-- END NAV -->
-
-<header class="hero is-info is-medium is-bold">
-    <div class="hero-body">
-        <div class="container has-text-centered">
-            <h1 class="title">Atelier POO 2</h1>
-            <p>Objectif : Utiliser l’héritage</p>
-        </div>
-    </div>
-</header>
+    </header>
 
 
-<main class="container">
-    <!-- START ARTICLE FEED -->
-    <section class="articles">
-        <div class="column is-8 is-offset-2">
-            <!-- START ARTICLE -->
-            <div class="card article">
-                <div class="card-content">
-                    <div class="media">
-                        <div class="media-content has-text-centered">
-                            <h2 class="title article-title">Prépare le terrain</h2>
+    <main class="container">
+        <!-- START ARTICLE FEED -->
+        <section class="articles">
+            <div class="column is-8 is-offset-2">
+                <!-- START ARTICLE -->
+                <div class="card article">
+
+                    <div class="tr"></div>
+                    <div class="tl"></div>
+                    <div class="br"></div>
+                    <div class="bl"></div>
+                    <div class="card-content">
+                        <div class="media">
+                            <div class="media-content has-text-centered">
+                                <h2 class="title article-title">Prépare le terrain</h2>
+                            </div>
                         </div>
-                    </div>
-                    <div class="content article-body">
-                        <p>Créer un programme dans un fichier <code>index.php</code></p>
-                        <p class="has-text-centered">L’unité de base (classe Unit) est l’équivalent d’un paysan.</p>
-                        <div class="has-text-centered">
-                            <img class="" src="assets/farmer.gif" alt="sniffer"/>
+                        <div class="content article-body">
+
+                            <ul>
+                                <li>Crée un novueau repertoir, intitulé "workshop-poo2" par exemple. Et déplace toi
+                                    dedans.</li>
+                                <li>Crée un fichier <code>index.php</code> à la racine de ce nouveau répertorie. C'est
+                                    d'ici que tu pourras instancier tes classes et d'intéragir avec.</li>
+                                <li>Fais un echo de "Hello wilder!" par exemple.</li>
+                                <li>Lance ta commande préférée, depuis ces derniers mois :
+                                    <code>php -S localhost:8000</code> et teste que ton message s'affiche.</li>
+                                <li>Si tout est ok, passe à la suite.</li>
+                            </ul>
+                            <div class="has-text-centered">
+                                <img src="assets/roman-4436335_1280.jpg" alt="">
+                            </div>
                         </div>
                     </div>
                 </div>
+                <!-- END ARTICLE -->
             </div>
-            <!-- END ARTICLE -->
-        </div>
-        <div class="column is-8 is-offset-2">
-            <!-- START ARTICLE -->
-            <div class="card article">
-                <div class="card-content">
-                    <div class="media">
-                        <div class="media-content has-text-centered">
-                            <h2 class="title article-title">Créer les classes</h2>
-                        </div>
-                    </div>
-                    <div class="content article-body">
-                        <p>Créer les classes représentées dans le schéma UML ci-dessous dans le dossier src</p>
-                        <p class="has-text-centered">(les flèches représentent l’héritage)</p>
-                        <div class="has-text-centered">
-                            <img class="" src="assets/uml.png" alt="sniffer"/>
-                        </div>
-                    </div>
-                </div>
-            </div>
-            <!-- END ARTICLE -->
-        </div>
-        <div class="column is-8 is-offset-2">
-            <!-- START ARTICLE -->
-            <div class="card article">
-                <div class="card-content">
-                    <div class="media">
-                        <div class="media-content has-text-centered">
-                            <h2 class="title article-title">Prépare tes classes</h2>
-                        </div>
-                    </div>
-                    <div class="content article-body">
-                        <div class="has-text-centered">
-                            <img class="" src="assets/rat.gif" alt="sniffer"/>
-                        </div>
-                        <p>Une fois ces classes créées :</p>
-                        <ul>
-                            <li>les unités basiques ont une vitesse de 1 (elles se déplacent de 1 en 1).</li>
-                            <li>Les elfes ont une vitesse de 5.</li>
-                            <li>Les soldats ont une vitesse de 2.</li>
-                            <li>La position des unités est représentée par un tableau [x, y] initialisé à la position [0,0].</li>
-                            <li>La méthode walk() prend un paramètre de type string qui indique la direction ('right', 'left', 'top', 'bottom'). Uniquement ces valeurs sont autorisées.</li>
-                            <li>La méthode walk() fait avancé l'unité en fonction de sa vitesse.</li>
-                            <li>Lors d’un echo sur un objet, ce dernier doit afficher sa position (revoir le cours 1).</li>
-                            <li>La méthode attack() affiche juste une phrase “à l’attaque”.</li>
-                        </ul>
-                    </div>
-                </div>
-            </div>
-            <!-- END ARTICLE -->
-        </div>
-        <div class="column is-8 is-offset-2">
-            <!-- START ARTICLE -->
-            <div class="card article">
-                <div class="card-content">
-                    <div class="media">
-                        <div class="media-content has-text-centered">
-                            <h2 class="title article-title">Joue avec les classes</h2>
-                        </div>
-                    </div>
-                    <div class="content article-body">
-                        <p class="has-text-centered">Maintenant que tes classes sont crées, tu peux jouer avec</p>
-                        <div class="has-text-centered">
-                            <img class="" src="assets/game.gif" alt="sniffer"/>
-                        </div>
-                        <ul>
-                            <li>Déplace tes unités, elfes et soldats dans l'espace avec la méthode walk().</li>
-                            <li>Fais un echo sur tes instances.</li>
-                            <li>Utilise la méthode attack() de tes elfes et soldats.</li>
-                        </ul>
-                    </div>
-                </div>
-            </div>
-            <!-- END ARTICLE -->
-        </div>
+            <div class="column is-8 is-offset-2">
+                <!-- START ARTICLE -->
+                <div class="card article">
 
-    </section>
-    <!-- END ARTICLE FEED -->
-</main>
+                    <div class="tr"></div>
+                    <div class="tl"></div>
+                    <div class="br"></div>
+                    <div class="bl"></div>
+                    <div class="card-content">
+                        <div class="media">
+                            <div class="media-content has-text-centered">
+                                <h2 class="title article-title">Créer les classes</h2>
+                            </div>
+                        </div>
+                        <div class="content article-body">
+                            <p>Créer les classes représentées dans le schéma UML ci-dessous dans un dossier src</p>
+                            <p class="">L’unité de base (classe Unit) ne fait absolument rien de
+                                spécifique...(les flèches représentent l’héritage)</p>                            
+                            <div class="has-text-centered">
+                                <img src="assets/uml.png" />
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- END ARTICLE -->
+            </div>
+            <div class="column is-8 is-offset-2">
+                <!-- START ARTICLE -->
+                <div class="card article">
 
-<script async type="text/javascript" src="../js/bulma.js"></script>
-<script src='https://cdnjs.cloudflare.com/ajax/libs/overlayscrollbars/1.9.1/js/OverlayScrollbars.min.js'></script>
-<script>
-    document.addEventListener("DOMContentLoaded", function () {
-        //The first argument are the elements to which the plugin shall be initialized
-        //The second argument has to be at least a empty object or a object with your desired options
-        OverlayScrollbars(document.querySelectorAll("body"), {});
-    });
-</script>
+                    <div class="tr"></div>
+                    <div class="tl"></div>
+                    <div class="br"></div>
+                    <div class="bl"></div>
+                    <div class="card-content">
+                        <div class="media">
+                            <div class="media-content has-text-centered">
+                                <h2 class="title article-title">Prépare tes classes</h2>
+                            </div>
+                        </div>
+                        <div class="content article-body">
+                            <div class="has-text-centered">
+                            </div>
+                            <p>Une fois ces classes créées :</p>
+                            <ul>
+                                <li>les unités basiques ont une vitesse de 1 (elles se déplacent de 1 en 1).</li>
+                                <li>Les archers ont une vitesse de 5.</li>
+                                <li>Les soldats ont une vitesse de 2.</li>
+                                <li>La position des unités est représentée par un tableau [x, y] initialisé à la
+                                    position [0,0].</li>
+                                <li>La méthode walk() prend un paramètre de type string qui indique la direction
+                                    ('right', 'left', 'top', 'bottom'). Uniquement ces valeurs sont autorisées.</li>
+                                <li>La méthode walk() fait avancé l'unité en fonction de sa vitesse.</li>
+                                <li>Lors d’un echo sur un objet, ce dernier doit afficher sa position (revoir le cours
+                                    1).</li>
+                                <li>La méthode attack() affiche juste une phrase “à l’attaque”.</li>
+                            </ul>
+                        </div>
+                        <div class="has-text-centered">
+                            <img src="assets/Roman_Army_&_Chariot_Experience,_Hippodrome,_Jerash,_Jordan_(5072088459).jpg"
+                                alt="">
+                        </div>
+                    </div>
+                </div>
+                <!-- END ARTICLE -->
+            </div>
+            <div class="column is-8 is-offset-2">
+                <!-- START ARTICLE -->
+                <div class="card article">
+
+                    <div class="tr"></div>
+                    <div class="tl"></div>
+                    <div class="br"></div>
+                    <div class="bl"></div>
+                    <div class="card-content">
+                        <div class="media">
+                            <div class="media-content has-text-centered">
+                                <h2 class="title article-title">Joue avec les classes</h2>
+                            </div>
+                        </div>
+                        <div class="content article-body">
+                            <p class="has-text-centered">Maintenant que tes classes sont crées, tu peux jouer avec</p>
+                            <div class="has-text-centered">
+                            </div>
+                            <ul>
+                                <li>Déplace tes unités, archers et soldats dans l'espace avec la méthode walk().</li>
+                                <li>Fais un echo sur tes instances.</li>
+                                <li>Utilise la méthode attack() de tes archers et soldats.</li>
+                            </ul>
+                        </div>
+                        <div class="has-text-centered">
+                            <img src="assets/spartan-3696073_1280.jpg" alt="">
+                        </div>
+                    </div>
+                </div>
+                <!-- END ARTICLE -->
+            </div>
+
+        </section>
+        <!-- END ARTICLE FEED -->
+    </main>
+
+    <script async type="text/javascript" src="../js/bulma.js"></script>
+    <script src='https://cdnjs.cloudflare.com/ajax/libs/overlayscrollbars/1.9.1/js/OverlayScrollbars.min.js'></script>
+    <script>
+        document.addEventListener("DOMContentLoaded", function () {
+            //The first argument are the elements to which the plugin shall be initialized
+            //The second argument has to be at least a empty object or a object with your desired options
+            OverlayScrollbars(document.querySelectorAll("body"), {});
+        });
+    </script>
 </body>
 
 </html>
